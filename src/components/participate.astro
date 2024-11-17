@@ -1,0 +1,55 @@
+---
+import Link from "@components/ui/link.astro";
+---
+
+<section>
+  <div
+    class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24 scroll-mt-12">
+    <!--start: wanna get involved -->
+    <div class="text-center lg:text-left">
+      <div>
+        <p
+          class="text-4xl tracking-tight font-medium text-black md:text-5xl font-display">
+          Do you want to get involved?
+          <br />
+          <br />
+        </p>
+      </div>
+    </div>
+    <!-- end: wanna get involved-->
+    <div
+      class="grid grid-cols-1 gap-4 mt-6 items-center list-none lg:grid-cols-2 lg:gap-24">
+      <!-- grid 1 start-->
+      <div>
+        <div class="mt-6 flex flex-col items-center justify-center">
+          <!-- link to the page -->
+          <Link
+            href="/contact"
+            target="_blank"
+            class="flex gap-1 items-center justify-center"
+            rel="noopener">
+            <!-- <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" /> -->
+            Host an Event!
+          </Link>
+        </div>
+      </div>
+      <!-- grid 1 end-->
+      <!-- grid 2 start-->
+
+      <div>
+        <div
+          class="mt-6 flex flex-col items-center justify-center sm:flex-row gap-3">
+          <Link
+            href="/contact"
+            target="_blank"
+            class="flex gap-1 items-center justify-center"
+            rel="noopener">
+            <!-- <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" /> -->
+            Give a Talk!
+          </Link>
+        </div>
+      </div>
+    </div>
+    <!-- grid 2 end-->
+  </div>
+</section>
