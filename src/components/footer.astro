@@ -1,19 +1,54 @@
-<footer class="my-20">
-  <p class="text-center text-sm text-slate-500">
-    Copyright © {new Date().getFullYear()} Astroship. All rights reserved.
-  </p>
-  <!--
-    Can we ask you a favor 🙏
-    Please keep this backlink on your website if possible.
-    or Purchase a commercial license from https://web3templates.com
-  -->
-  <p class="text-center text-xs text-slate-500 mt-1">
-    Made by <a
-      href="https://web3templates.com"
-      target="_blank"
-      rel="noopener"
-      class="hover:underline">
-      Web3Templates
-    </a>
-  </p>
-</footer>
+---
+import Container from "./container.astro";
+---
+
+<header>
+  <!-- styling start - underline when hovering - currently only underlined when clicking, not when hovering?-->
+  <style>
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <!-- styling end -->
+  <nav class="absolute z-50 w-full bg-gray-900 dark:lg:bg-transparent">
+    <Container>
+      <!-- 2 grid start -->
+      <div
+        class="mt-12 grid sm:grid-cols-3 gap-4 sm:gap-12 max-w-3xl w-full mx-auto">
+        <div></div>
+        <div class="space-y-3">
+          <h2 class="text-gray-100 dark:text-black text-xl font-semibold">
+            Links
+          </h2>
+          <p class="text-gray-400 dark:text-gray-400">
+            <a href="https://github.com/zurich-r-user-group"> Github Org</a>
+          </p>
+          <p class="text-gray-400 dark:text-gray-400">
+            <a href="https://www.meetup.com/zurich-r-user-group/events/past/">
+              Meetup Org</a
+            >
+          </p>
+        </div>
+        <div class="space-y-3">
+          <h2 class="text-gray-100 dark:text-black text-xl font-semibold">
+            RSEED at KOF Lab
+          </h2>
+          <p class="text-gray-400 dark:text-gray-400">Dr. Matthias Bannert</p>
+          <p class="text-gray-400 dark:text-gray-400">
+            KOF Swiss Economic Institute
+          </p>
+          <p class="text-gray-400 dark:text-gray-400">Leonhardstrasse 21</p>
+          <p class="text-gray-400 dark:text-gray-400">8092 Zurich</p>
+          <h2 class="text-gray-100 dark:text-white text-xl font-semibold">
+            Contact
+          </h2>
+          <p class="text-gray-400 dark:text-gray-400">Minna Heim</p>
+          <p class="text-gray-400 dark:text-gray-400">heim [at] kof.ethz.ch</p>
+        </div>
+      </div>
+      <!-- 2 grid end -->
+      <br /></Container
+    >
+    <!-- is there a better way to add padding here? its the same top and bottom coincidentally, but should be done soemwhere-->
+  </nav>
+</header>
