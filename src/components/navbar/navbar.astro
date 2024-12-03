@@ -20,17 +20,18 @@ const menuitems = [
   //   path: "/pricing",
   // },
   {
-    title: "About",
-    path: "/about",
-  },
-  {
-    title: "Blog",
+    title: "blog",
     path: "/blog",
   },
   {
-    title: "Contact",
-    path: "/contact",
+    title: "Give a Talk",
+    path: "#talk",
   },
+  {
+    title: "Host a Meetup",
+    path: "/host",
+  },
+  
   // {
   //   title: "Pro Version",
   //   badge: true,
@@ -44,9 +45,8 @@ const menuitems = [
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
         <a href="/" class="text-lg"
-          ><span class="font-bold text-slate-800"> Zurich R User </span><span
-            class="text-slate-500">Group</span
-          >
+          ><span class="font-bold text-slate-800"> Zurich R User </span>
+          <span class="text-slate-500">Group</span>
         </a>
         <div class="block lg:hidden">
           <MenuIcon class="w-4 h-4 text-gray-800" />
