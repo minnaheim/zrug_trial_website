@@ -23,16 +23,16 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
         Are You a useR ? 
       </h2>
       <p class="text-lg leading-relaxed text-slate-500">
-        Do you have a data team of open source enthusiasts? Are you interested to point other data enthusiasts to your
+        Do you have a team of open source enthusiasts? Are you interested to point other data enthusiasts to your
         organization or simply want to support the open source community?
       </p>
       <p>
-        for shizzle.
+        fo shizzle.
       </p>
     </div>
     <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
       <h2 class="font-bold text-3xl text-gray-800">
-        The Origanizers
+        Meet the Origanizers
       </h2>
       <p class="text-lg leading-relaxed text-slate-500">
         We are a team of R and data enthusiasts with different backgrounds and different points in our careers. 
@@ -41,21 +41,11 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
         sayin this and that cause this and that was missing. 
       </p>
     </div>
-    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
+    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12 mb-12">
       {
         publishedTeamMembers.map((teamMemberEntry) => (
           <div class="group">
-            <div class="w-full aspect-square">
-              <Picture
-                src={teamMemberEntry.data.avatar.src}
-                alt={teamMemberEntry.data.avatar.alt}
-                sizes="(max-width: 800px) 100vw, 400px"
-                width={400}
-                height={400}
-                class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center aspect-square"
-              />
-            </div>
-
+            
             <div class="mt-4 text-center">
               <h2 class="text-lg text-gray-800">{teamMemberEntry.data.name}</h2>
               <h3 class="text-sm text-slate-500">
