@@ -1,62 +1,25 @@
-# Astroship - Astro SAAS Starter Website Template
-
-Astroship is a free starter astro website template for saas, startups, marketing websites, landing pages & blogs. Built with Astro & TailwindCSS.
-
-This Free Template is sponsored by [Web3Templates](https://web3templates.com)
-
+# Zurich R User Group - New Website
 
 ## Installation
 
-If you are reading this on github, you can click on the "Use this template" button above to create a new repository from astroship to your account. Then you can do a `git clone` to clone it to your local system.
+To get started, you can clone this repository and install the dependencies.
 
-Alternatively, you can clone the project directly from this repo to your local system.
-
-### 1. Clone the repo
-
+### 1. Navigate to your project folder & clone the repository
 ```bash
-git clone https://github.com/surjithctly/astroship.git myProjectName
-# or
-git clone https://github.com/surjithctly/astroship.git .
+git clone https://github.com/minnaheim/zrug_trial_website.git
 ```
 
-The `.` will clone it to the current directory so make sure you are inside your project folder first.
-
-### 2. Install Dependencies
+### 2. Install Dependencies & start the development server
 
 ```bash
+cd zrug_trial_website # navigate to the project folder
 npm install
-# or
-yarn install
-# or (recommended)
-pnpm install
-```
-
-### 3. Start development Server
-
-```bash
 npm run dev
-# or
-yarn dev
-# or (recommended)
-pnpm dev
-```
-
-### Preview & Build
-
-```bash
-npm run preview
-npm run build
-# or
-yarn preview
-yarn build
-# or (recommended)
-pnpm preview
-pnpm build
 ```
 
 ## Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
+Inside the folder `zrug_trial_website`, you'll see the following folders and files:
 
 ```
 /
@@ -72,7 +35,4 @@ Inside of your Astro project, you'll see the following folders and files:
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
+The different webpages, i.e. the main page can be found under `src/pages/`. Currently only the pages `about.astro`, `blog.astro` and `host.astro`. The `index.astro` just combines all components which can be found on the main page. The layout of the pages can be found under `src/layouts/`. The components used in the pages can be found under `src/components/`.
